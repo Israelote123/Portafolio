@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
 header{
     position: sticky;
     top: 0; 
@@ -8,6 +19,15 @@ header{
 nav{
     height: 2rem;
     border-bottom: 1px solid;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(68, 68, 68)
 }
 
 .nav_container{
@@ -22,8 +42,15 @@ nav{
     height: 1.25rem;
 }
 
+.nav_desktop{
+    display: none;
+    float: left;
+    margin-left: 1rem;
+}
+
 .nav_options{
     list-style-type: none;
+    overflow: hidden;
     margin: 0 1rem 0 0;
     padding: 0;
 }
@@ -42,13 +69,17 @@ nav{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
 .home_image{
+    margin-top:1rem;
     border-radius: 50%;
+    width: 8rem;
+    border-style: solid;
+    border-color: rgb(36, 99, 235);
 }
 
 .home_text{
@@ -61,6 +92,10 @@ nav{
 
 .about_container{
     margin-top: 1rem;
+}
+
+.about_image{
+    display: none;
 }
 
 .about_title{
@@ -77,21 +112,29 @@ nav{
 }
 
 .skills_container{
+    margin:0px auto;
     margin-top: 1rem;
     display: flex;
     width: 100%;
+    max-width: 768px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .skill_card{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem 1rem;
 }
 
 .skill_card_image{
     width: 2rem;
     height: 2rem;
+}
+
+.sagas_image{
+    width: 3.5rem;
 }
 
 .card{
@@ -139,7 +182,7 @@ nav{
 }
 
 .project:nth-child(3){
-    background:linear-gradient(rgba(255, 255, 255, 0), rgba(72, 73, 73, 0.568)), url(./img/Tecla.png);
+    background:linear-gradient(rgba(255, 255, 255, 0), rgba(72, 73, 73, 0.568)), url(./img/logo_teclaFriends.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -182,4 +225,179 @@ footer{
     text-align: center;
 }
 
+@media only screen and (max-width: 280px) {
+    body{
+        font-size: 12px;
+    }
+  }
 
+@media only screen and (min-width: 426px) {
+    body{
+        font-size: 31px;
+    }
+
+    nav{
+        height: 3rem;
+    }
+
+    .nav_logo{
+        width: 9rem;
+        height: 1.8rem;
+    }
+    
+    .nav_options{
+        list-style-type: none;
+        margin: 0 1rem 0 0;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .home{
+        height: 40rem;
+    }
+
+    .home_image{
+        width: 16rem;
+    }
+
+    .home_icon, .footer_icon{
+        margin: 1rem 1rem;
+    }
+
+    .about_text{
+        margin-left: 3rem;
+    }
+
+    .skill_card_image{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .sagas_image{
+        width: 8rem;
+    }
+
+    .card{
+        width: 30rem;
+        height: 14rem;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+
+    .card:nth-child(3){
+        margin-bottom: 0rem;
+    }
+
+    .card:nth-child(2){
+        flex-direction: row-reverse;
+    }
+
+    .card_image{
+        margin-top: 0.5rem;
+        height: 10rem;
+        width: 12rem;
+        border-radius: 25px;
+    }
+
+    .card_text{
+        width: 15rem;
+    }
+
+    .project{
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 20rem;
+        height: 16rem;
+    }
+
+    .project:nth-child(2){
+        flex-direction: row;
+    }
+
+    .icon_container{
+        width: 7rem;
+        margin: 0 1rem 1rem 0;
+    }
+    
+    .icon{
+        font-size: 2.5rem;
+    }
+    
+    #projects{
+        margin-bottom: 2rem;
+    }
+
+    footer{
+        height: 11.5rem;
+        background-color: rgba(67, 133, 245, 0.72);
+        font-size: 16px;
+    }
+    
+    .contact_title{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .nav_mobile{
+        display: none;
+    }
+
+    .nav_desktop{
+        display: block;
+    }
+
+    .container{
+        flex-direction: row;
+    }
+
+    .home{
+        background:linear-gradient(rgb(67 133 245 / 72%), rgba(67, 133, 245, 0.72)) , url(./img/programming_undraw.svg) no-repeat center right;
+        background-size: 50% 20rem;
+        position: relative;
+        width: 100%;
+        height: 20rem;
+    }
+
+    .home_image{
+        margin-top: 0;
+    }
+
+    .home_text{
+        width: 20rem;
+    }
+
+    .about_container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about_image{
+        display: block;
+        width: calc(50% - 3rem);
+        max-width: 497px;
+    }
+
+    .about_content{
+        max-width: 560px;
+    }
+
+    .project{
+        width: 30rem;
+    }
+
+    .project:nth-child(1){
+        background:linear-gradient(rgba(255, 255, 255, 0), rgba(72, 73, 73, 0.568)), url(./img/hangman_pc.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .project:nth-child(2){
+        background:linear-gradient(rgba(255, 255, 255, 0), rgba(72, 73, 73, 0.568)), url(./img/encriptador_pc.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+}

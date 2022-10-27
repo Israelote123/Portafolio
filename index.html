@@ -17,13 +17,13 @@
             <div class="nav_container">
                 <img class="nav_logo" src="./img/Isra_portafolio.png" alt="Israel">
                 <ul class="nav_options">
-                    <!--<li>Inicio</li>
-                <li>Sobre mi</li>
-                <li>Skills</li>
-                <li>Formación</li>
-                <li>Proyectos</li>
-                <li>Contacto</li>-->
-                    <li>joseprinsisrael@gmail.com</li>
+                    <li class="nav_desktop"><a href="#home_page">Inicio</a></li>
+                    <li class="nav_desktop"><a href="#about">Sobre mi</a></li>
+                    <li class="nav_desktop"><a href="#skills">Skills</a></li>
+                    <li class="nav_desktop"><a href="#academic">Formación</a></li>
+                    <li class="nav_desktop"><a href="#projects">Proyectos</a></li>
+                    <li class="nav_desktop"><a href="#contact">Contacto</a></li>
+                    <li class="nav_mobile">joseprinsisrael@gmail.com</li>
                 </ul>
             </div>
         </nav>
@@ -32,28 +32,31 @@
         <section id="home_page">
             <div class="home">
                 <div class="container">
-                    <img class="home_image" src="" alt="Imagen de Israel"></img>
+                    <img class="home_image" src="./img/me.png" alt="Imagen de Israel"></img>
                     <div class="home_text">
-                        <p>Hola, soy José Israel y soy un desarrollador web, full stack, front end, back end</p>
-                        <i class="icon icon-github home_icon"></i><i class="icon icon-linkedIn home_icon"></i>
+                        <p>Hola, soy José Israel y soy un Desarrollador<br><span class="typed"></span></p>
+                        <a href="https://github.com/Israelote123" target="_blank"><i class="icon icon-github home_icon"></i></a>
+                        <a href="https://www.linkedin.com/in/lua-israel/" target="_blank"><i class="icon icon-linkedIn home_icon"></i></a>
                     </div>
                 </div>
             </div>
         </section>
         <section id="about">
             <div class="about_container">
-                <div class="about_title">
-                    Sobre mi...
-                </div>
-                <div class="about_text">
-                    Soy un desarrollador en busca de mas conocimiento y oportunidades, trabajo con frameworks como
-                    React
-                    y
-                    Node Js ademas de que tengo buenas habilidades para comunicarme y trabajar en equipo sin ningun
-                    tipo
-                    de
-                    problemas.
-
+                <img class="about_image" src="./img/review_redraw.svg" alt="Sobre mi">
+                <div class="about_content">
+                    <div class="about_title">
+                        Sobre mi...
+                    </div>
+                    <div class="about_text">
+                        Soy un desarrollador en busca de mas conocimiento y oportunidades, trabajo con frameworks como
+                        React
+                        y
+                        Node Js ademas de que tengo buenas habilidades para comunicarme y trabajar en equipo sin ningun
+                        tipo
+                        de
+                        problemas.
+                    </div>
                 </div>
             </div>
         </section>
@@ -61,20 +64,40 @@
             <div class="skills_title">Skills</div>
             <div class="skills_container">
                 <div class="skill_card">
-                    <img class="skill_card_image" src="./img/React-icon.svg" alt="React">
-                    React
+                    <img class="skill_card_image" src="./img/html5.svg" alt="HTML5">
+                    HTML5
                 </div>
                 <div class="skill_card">
                     <img class="skill_card_image" src="./img/Devicon-css3-plain.svg" alt="CSS">
                     CSS
                 </div>
                 <div class="skill_card">
+                    <img class="skill_card_image" src="./img/javascript.svg" alt="JavaScript">
+                    JavaScript
+                </div>
+                <div class="skill_card">
+                    <img class="skill_card_image" src="./img/React-icon.svg" alt="React">
+                    React
+                </div>
+                <div class="skill_card">
                     <img class="skill_card_image" src="./img/Node.js_logo.svg" alt="Node Js">
                     NodeJs
                 </div>
                 <div class="skill_card">
+                    <img class="skill_card_image" src="./img/mysql.svg" alt="mySQL">
+                    mySQL
+                </div>
+                <div class="skill_card">
                     <img class="skill_card_image" src="./img/redux.png" alt="Redux">
                     Redux
+                </div>
+                <div class="skill_card">
+                    <img class="skill_card_image sagas_image" src="./img/redux_saga.png" alt="Redux-Sagas">
+                    Redux-Sagas
+                </div>
+                <div class="skill_card">
+                    <img class="skill_card_image" src="./img/json.svg" alt="JWT">
+                    JWT
                 </div>
             </div>
         </section>
@@ -100,20 +123,19 @@
             <div class="card_container">
                 <div class="card project">
                     <div class="icon_container">
-                        <i class="icon icon-github"></i>
-                        <i class="icon icon-show"></i>
+                        <a href="https://github.com/Israelote123/encriptadorOne" target="_blank"><i class="icon icon-github"></i></a>
+                        <a href="https://israelote123.github.io/encriptadorOne/" target="_blank"><i class="icon icon-show"></i></a>
                     </div>
                 </div>
                 <div class="card project">
                     <div class="icon_container">
-                        <i class="icon icon-github"></i>
-                        <i class="icon icon-show"></i>
+                        <a href="https://github.com/Israelote123/HangmanGame" target="_blank"><i class="icon icon-github"></i></a>
+                        <a href="https://israelote123.github.io/HangmanGame/" target="_blank"><i class="icon icon-show"></i></a>
                     </div>
                 </div>
                 <div class="card project">
                     <div class="icon_container">
-                        <i class="icon icon-github"></i>
-                        <i class="icon icon-show"></i>
+                        <a href="https://github.com/Israelote123/TeclaFriends" target="_blank"><i class="icon icon-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -123,15 +145,18 @@
         <section id="contact">
             <div class="contact_container">
                 <div class="contact_content">
-                    <p>Contacto</p>
-                    <i class="icon icon-linkedIn footer_icon"></i><i class="icon icon-github footer_icon"></i><i
-                        class="icon icon-mail footer_icon"></i>
+                    <p class="contact_title">Contacto</p>
+                    <a href="https://www.linkedin.com/in/lua-israel/" target="_blank"><i class="icon icon-linkedIn footer_icon"></i></a>
+                    <a href="https://github.com/Israelote123" target="_blank"><i class="icon icon-github footer_icon"></i></a>
+                    <a href="mailto:joseprinsisrael@gmail.com"><i class="icon icon-mail footer_icon"></i></a>
                     <br><br>
                     ©José Israel Lua Ordaz, All Right Reserved
                 </div>
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
